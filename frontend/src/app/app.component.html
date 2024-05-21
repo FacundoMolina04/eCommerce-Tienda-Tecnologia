@@ -1,0 +1,63 @@
+<head>
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    />
+</head>
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/" href="#">
+
+      <h1 class="animate__animated animate__jackInTheBox" href="#">
+        GAMERLAND
+      </h1>
+    </a>
+  </div>
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="search" placeholder="Search">
+    <button type="submit">Search</button>
+  </div>
+
+  <!-- Right Side Icons -->
+  <div class="nav-right">
+    <!-- Shopping Cart Icon -->
+    <div class="cart-icon">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L.61 1.607 0 1.5zM3.102 6l1.313 7h7.17l1.313-7H3.102zM5.5 16a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- User Icon with Dropdown -->
+    <div class="dropdown">
+      <div class="user-icon">
+        <img src="/docs/images/people/profile-picture-3.jpg" alt="User photo">
+      </div>
+      <div class="dropdown-content">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login" [ngClass]="{active: menuOption == 'login'}" (click)="onOption('login')">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+<div class="container-fluid">
+  <div class="nav-links">
+    <a class="animate__animated animate__jackInTheBox"href="#">Components</a>
+    <a class="animate__animated animate__jackInTheBox"href="#">PCs</a>
+    <a class="animate__animated animate__jackInTheBox"href="#">Graphics Cards</a>
+    </div>
+</div>
+<br>
+<router-outlet></router-outlet>
+
+
+
+
