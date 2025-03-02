@@ -7,3 +7,5 @@ Tecnologías Utilizadas
     Frontend: Angular
     API REST: Comunicación entre el frontend y el backend
     Base de Datos: MySQL
+
+Se puede utilizar en: https://tallerphp.uy/myupgrade/
